@@ -1,0 +1,27 @@
+<!--First letter UpperCase-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <script>
+    //Enter the Name
+    var Name = prompt("Enter Your Name: ");
+    //make first letter UpperCase
+    var upperChar = Name.slice(0, 1);
+    a = upperChar.toUpperCase();
+    //to print remaining letters expect 1st lettr
+    b = Name.slice(1, Name.length)
+    //make all the letters LowerCase Expect 1st One Then Print
+    lower = b.toLowerCase();
+    alert("Hello " + a + lower);
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+
+<body>
+    <script>
+        let fruits = "Apple, Banana, Kiwi, Apple, aPPle";
+        //01
+        document.write("1) " + fruits.length );
+        //02-Extracting String Parts
+        document.write("<br> 2) " + fruits.slice(7,13));
+        document.write("<br> 3) " + fruits.slice(-12));
+
+        document.write("<br> 4) " + fruits.substring(7,13));
+        //substring ==> if end value is less than 0 then it is treated as 0
+        document.write("<br> 5) " + fruits.substring(-12));
+        //substr ==> second parameter specifies the length of extended part
+        document.write("<br> 6) " + fruits.substr(7,6));
+
+        //03
+        document.write("<br> 7) " + fruits.replace("Apple", "Mango"));
+        //04
+        document.write("<br> 8) " + fruits.replaceAll("Apple", "Mango"));
+        document.write("<br> 9) " + fruits.replace(/Apple/, "Mango"));
+        //global variable it replaces all
+        document.write("<br> 10) " + fruits.replace(/Apple/g, "Mango"));
+        //global variable with case sensitive it replaces all
+        document.write("<br> 11) " + fruits.replace(/apple/gi, "Mango"));
+        //05
+        document.write("<br> 12) " + fruits.toUpperCase());
+        //06
+        document.write("<br> 13) " + fruits.toLowerCase());
+
+
+        //07 removing white spaces
+        let msg = "           hello         ";
+        let trimmed = msg.trim();
+        document.write("<br> 14.a) " + msg + ", (length): " +msg.length);
+        document.write("<br> 14.b) " + trimmed + ", (length): " +trimmed.length);
+        
+        //08
+        let start = msg.trimStart();
+        document.write("<br> 14.b) " + start + ", (length): " +start.length);
+        //09
+        let end = msg.trimEnd();
+        document.write("<br> 14.b) " + end + ", (length): " +end.length);
+
+        //10 pads the string from start, end
+        let x = "5";
+        document.write("<br> 15) " + x.padStart(4, "0"));
+        document.write("<br> 16) " + x.padEnd(5, "3"));
+
+        //converting number to string using ==> .toString();
+        let y = 6;
+        let z = y.toString();
+        document.write("<br> 17) " + z.padStart(3, "1"));
+
+        //11 concat
+        let c = "Hello";
+        let d = "World!";
+        let e = ".com";
+        document.write("<br> 18.a) " + c.concat(d));
+        document.write("<br> 18.b) " + c+ " "+ d);
+        document.write("<br> 18.c) " + c.concat(d,e));
+
+        //12 EXTRACTING STRING CHARACTERS
+        //12.a charAt()=>returns a character at a specified index
+        let input = "Hello World!";
+        let char = input.charAt(0);
+        document.write("<br> 19.a) " + char);
+        document.write("<br> 19.a) " + input.charAt(13)); //returns an empty string
+
+        //12.b charCodeAt()=> returns a UNICODE VALUE of a specified index
+        document.write("<br> 19.b) " + input.charCodeAt(0));
+        document.write("<br> 19.b) " + input.charCodeAt(13)); //returns a NAN value
+        
+        //12.c property access=> returns a string property to access
+        document.write("<br> 19.c) " + input[0]);
+        document.write("<br> 19.c) " + input[13]); //returns an Undefined value
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Methods</title>
+</head>
+
+<body>
+    <script>
+        //01 CONVERTING STRING TO AN ARRAY
+        let txt = "a,b,c, d, ef";
+        document.write("1) " + txt.split(",")); //split by commas
+        let x = "a bc d e f";
+        document.write("<br> 2) " + x.split(" ")); //split by spaces
+        let t = "abcde|fg"
+        document.write("<br> 3) " + t.split("|")); //split by pipes
+        document.write("<br> 4) " + t.split("")); //split by no spaces
+
+        document.write("<br> <br>");
+
+        //02 STRING SEARCH
+        let msg = "Please locate where 'locate occurs.";
+        document.write("<br> 5) " + msg.indexOf("locate"));
+        document.write("<br> 6) " + msg.indexOf("locate", 15)); //it leaves 15character then search where next 'locate' word present ==> left to right movement
+        document.write("<br> 7) " + msg.lastIndexOf("locate"));
+        document.write("<br> 8) " + msg.lastIndexOf("locate", 15));//it leaves 15character then search where next 'locate' word present ==> right to left movement
+
+        document.write("<br> 9) " + msg.search("locate")); //not possible to search 2nd start position argument
+
+        //03 match()
+        let text = "The rain in SPAIN stays mainly in the plain";
+        let m = text.match("ain")
+        document.write("<br> 10) "+ m +" "+ m.length);
+        let m1 = text.match(/ain/);
+        document.write("<br> 11) "+ m1 +" "+ m1.length);
+        let m2 = text.match(/ain/g); //global search
+        document.write("<br> 11) "+ m2 +" "+ m2.length);
+        let m3 = text.match(/ain/gi); //global and case sensitive
+        document.write("<br> 11) "+ m3 +" "+ m3.length);
+
+        //04 matchAll()
+        let c = "I love cats. Cats are very easy to love, so i love Cats";
+        let i = c.matchAll("Cats"); 
+        document.write("<br> 12) "+ Array.from(i));
+        let j = c.matchAll(/Cats/gi); 
+        document.write("<br> 13) "+ Array.from(j));
+        
+        //05 includes()
+        let h = "hello world! good morning";
+        document.write("<br> 14) "+ h.includes("good"));
+        //06 startsWith()
+        document.write("<br> 15.a) "+ h.startsWith("good"));
+        document.write("<br> 15.b) "+ h.startsWith("good",14));
+        
+        //06 endsWith()
+        document.write("<br> 16.a) "+ h.endsWith("morning"));
+        document.write("<br> 16.b) "+ h.endsWith("good",4));
+        
+    </script>
+</body>
+</html>

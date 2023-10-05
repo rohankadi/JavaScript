@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+  </body>
+  <script>
+    //01
+     var tweet = prompt("Compose Your tweet.")
+     var tweetCount = tweet.length
+     document.write("You have written " + tweetCount + " Characteristics. and " + (180-tweetCount) + " Characteristics are left." )
+
+
+     //02
+     if(tweet.length > 200){
+        alert("You have entered "+ tweet.length +" characters Please, make it below 200 to proceed further");
+     }else{
+       document.write("you have written " + tweet.length+" characters. and remaining "+(200 - tweet.length));
+       }
+
+    //03 Slicing
+    // var Name = "Rohan";
+    // a = Name.slice(0, 2);
+    // console.log(a);
+
+    //04 Slicing
+  //  var tweet = prompt("Compose your tweet.")
+  //  var tweetCount140 = tweet.slice(0,140)
+  //  alert(tweetCount140) 
+
+  </script>
+</html>

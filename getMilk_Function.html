@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<!--01-->
+<!-- <script>
+    function getMilk(money){
+
+        var numOfBottels = Math.floor(money / 1.5);
+        console.log("for 1 bottle u need to pay " + "$"+ money + "for" + numOfBottels + " You need to pay " + (numOfBottels * 5))
+    }
+    getMilk(5);
+</script> -->
+
+<!--02-->
+<!-- <script>
+    function milk(money, costperBottel){
+    var numOfBottels = Math.floor(money / costperBottel)
+    console.log("Buy " + numOfBottels + " bottels of milk.")
+    }
+    milk(5 , 1.33)
+</script> -->
+
+<!--03-->
+<script>
+    function getMilk(money, costperBottel) {
+      var numofbottles = Math.floor(money / costperBottel);
+      console.log("Total Num of bottles = " + numofbottles);
+      var remainingMoney = Math.floor(money % costperBottel);
+      return remainingMoney;
+    }
+    var change = getMilk(20, 6);
+    console.log("remaining money is = "+ change);
+  </script>
+</html>

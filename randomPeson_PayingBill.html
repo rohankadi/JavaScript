@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        var names = ["Angela", "Ben", "Jenny", "Michael", "Rohan"];
+
+        function whosPaying(names) {
+            //01
+            /*
+            var personPosition = Math.floor((Math.random() * names.length));
+            var payPerson = names[personPosition];
+            return payPerson + " is going to buy lunch today!";
+            */
+
+            //02
+            var noOfPeople = names.length; //5
+            var personPosition = Math.random() * noOfPeople; //0-0.9999, //0-4.9999
+            var roundPosition = Math.floor(personPosition); //removes decimal 4,1,2
+            var payingPerson = names[roundPosition];
+
+            return payingPerson + " is going to buy lunch today!"
+        }
+
+        document.write(whosPaying(names));
+
+    </script>
+</body>
+
+</html>

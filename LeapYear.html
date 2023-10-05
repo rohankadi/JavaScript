@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    //01
+    /* function LeapYear(Year){  
+        if(Year % 4 == 0 && Year % 400 == 0){
+            return("The Year " + Year + " is Leap Yar");
+        }
+        else if(Year % 100 == 0){
+            return("The Year " + Year + " is not Leap Yar");
+        }
+        
+        else{
+            return("not leap year")
+        }
+    }
+ 
+    var Year = prompt("Enter a Year: ");
+    alert(LeapYear(Year));*/
+
+    //or 02
+    function isLeap(year) {
+      if (year % 4 === 0) {
+        if (year % 100 === 0) {
+          if (year % 400 === 0) {
+            return "Leap Year";
+          } else {
+            return "No leap";
+          }
+        } else {
+          return "Leap Year";
+        }
+      } else {
+        return "No leap Year";
+      }
+    }
+
+    var Year = prompt("Enter a Year: ");
+    alert(isLeap(Year));
+  </script>
+</html>

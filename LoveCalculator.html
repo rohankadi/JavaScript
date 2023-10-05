@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Love Calculator</title>
+  </head>
+  <body>
+  <script>
+    var name1 = prompt("Enter your Name: ");
+    var name2 = prompt("Enter your Partner Name: ");
+ 
+
+    let LoveScore = Math.random() * 100; //Math.random() generates values between 0-0.999999999 less than 1;
+                                    //Therefore Math.random()*100 = random values between 0-1 and mul* 100
+  
+    LoveScore = Math.floor(LoveScore) + 1; //1-100
+    // alert("your LoveScore is "+ LoveScore + "%");
+
+
+    if(LoveScore === 100 ){
+     alert(name1 +" "+ name2 + " both of your LoveScore is " + LoveScore + "%" + "You love each other like Shree Ram loves Sita")
+    }
+    
+    if(LoveScore > 30 && LoveScore < 90)
+      { 
+      alert("Your LoveScore is "+ LoveScore + " you both go together like Oil and Water")
+    }
+
+    else{
+      alert("You both r not made for each other");
+    }
+  </script>
+  </body>
+</html>

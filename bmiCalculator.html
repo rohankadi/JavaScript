@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body></body>
+  <script>
+    function bmiCalculator(weight, height) {
+      return weight / height ** 2;
+    }
+
+    var bmi = bmiCalculator(65, 1.8);
+    console.log("Your bmi is " + Math.floor(bmi));
+
+    // function bmiCalculator(weight, height) {
+    //  var bmi = weight / height ** 2;
+
+    //or var bmi = weight / Math.pow(height, 2);
+    
+    //   return Math.round(bmi)
+    // }
+
+    // var bmi = bmiCalculator(65, 1.8);
+    // console.log("Your bmi is " + bmi);
+  </script>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DataTypes</title>
+</head>
+<body>
+    <script>
+        let s = "Hello World!";
+        let n = 20;
+        let bi = BigInt(999999999999999999999999999999999);
+        let bl = true;
+        let u = undefined;
+        let v;
+        let a = null;
+        const person = {firstName : "Rohan", //Object
+                        lastName : "Kadi"} ;
+        const car = ["saab", "benz", "toyota"]; //Array, (type=>Object)
+        const date = new Date("2023-09-30");
+
+        console.log(typeof(s) + " " +s);
+        console.log(typeof(n) + " " +n);
+        console.log(typeof(bi) + " " +bi);
+        console.log(typeof(bl) + " " +bl);
+        console.log(typeof(u) + " " +u);
+        console.log(typeof(v) + " " +v);
+        console.log(typeof(a) + " " +a);
+        console.log(typeof(person) + " " +person.firstName + " " + person.lastName);
+        console.log(typeof(car) + " " +car[0]);
+        console.log(typeof(date) + " " +date);
+    </script>
+</body>
+</html>
