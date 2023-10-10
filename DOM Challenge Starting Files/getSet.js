@@ -22,9 +22,9 @@ var element;
 
 //element = document.getElementById("header").attributes;
 
-//element = document.getElementById("header").attributes[1];
+// element = document.getElementById("header").attributes[1];
 
-//element = document.getElementById("header").attributes[2].name;
+// element = document.getElementById("header").attributes[2].name;
 
 //element = document.getElementById("header").attributes[1].value;
 
