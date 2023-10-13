@@ -1,0 +1,41 @@
+<!-- Reverse a Number -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+</head>
+
+<body>
+  <p id="demo"></p>
+</body>
+<script>
+  n = prompt("Enter the number : ");
+
+  function reverse_a_Number(n) {
+    //n = n + " "; // convert num to string
+    //or
+    var reversedNum = n.toString().split("").reverse().join("");
+    return reversedNum;
+  }
+
+  document.getElementById("demo").innerHTML = reverse_a_Number(n);
+
+
+  // or  02
+  /*
+  var sum = 0;
+  for (i = n.length; i > 0; i--) {
+    var r = n % 10;
+    sum = (sum * 10) + r;
+    n = Math.floor(n / 10);
+  }
+  document.getElementById("demo").innerHTML = sum
+ // console.log(sum);
+ */
+</script>
+
+</html>
