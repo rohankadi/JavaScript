@@ -1,0 +1,54 @@
+<!--01 By using FOR Loop
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        const cars = ["Honda", "Ford", "Toyota", "Nissan"]
+        a = cars.length
+        b = "<ul>"
+        for (let i = 0; i < a; i++){
+            b += "<li>" + cars[i] + "</li>"
+        }
+        document.getElementById("demo").innerHTML = b
+        text += "</ul>";
+    </script>
+</body>
+</html> -->
+
+<!--02 By using Function and ForEach -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="demo"></div>
+    <script>
+        const cars = ["Honda", "Ford", "Toyota", "Nissan"];
+        let b = "<ul>"
+        cars.forEach(myfunction)
+        b += "</ul>"
+        document.getElementById("demo").innerHTML = b
+
+        function myfunction(rhn) {
+           b += "<li>" + rhn + "</li>"
+        }
+
+    </script>
+</body>
+
+</html>

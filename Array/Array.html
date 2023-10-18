@@ -1,0 +1,83 @@
+<h2>Arrays :</h2>
+<script>
+//*******************Array Types In JS********************
+    //01-Numeric Indexced
+    /* let modules = ["Html", "Css", "Php", "Sql", "Bootstrap"];
+     // document.write(modules[0] + " ");
+     // document.write(modules[1] + " ");
+     // document.write(modules[2] + " ");
+     // document.write(modules[3] + " ");
+     
+     //for-of-Loop
+     for(let element of modules){
+         document.write(element + " ");
+     }*/
+
+     /*
+    //02-Object
+    let modules = new Array("Html", "Css", "Php", "Sql", "Bootstrap");
+    //document.write(modules[0])
+     modules.push ("JavaScript"); //Push is a Method in js used to add a element at the end of an array.
+    for (let element of modules) {
+        document.write(element + " ");
+    }
+
+    document.write("<br>---------------------<br>");
+    let module = new Array("HTML", "CSS", "JAVASCRIPT", "PHP", "SQL");
+    module.pop();
+    for(let element of module){
+        document.write(element + " ");
+    }
+    */
+
+    //01-For-Of-Loop
+    /*"use strict";
+    const arr = [2, 4, 6, 8, 10];
+    arr.forEach(function (element) {
+        document.write(element + " ")
+    })
+    //02
+    let PrintElement = function (element) {   //Anonymous Function stored in a variable name PrintElement, 
+        //which doesn't have any name to it.
+        document.write(element + " ");
+    };
+    arr.forEach(PrintElement);*/
+
+</script>
+
+<h3>Types of Methods --></h3>
+<p> Push, Pop, forEach , Map, and Filter</p>
+<script>
+    //ForEach
+    "use strict";
+    const brr = [2,4,6,8,10];
+
+    brr.forEach(function(element){
+        document.write(element + " ");
+    })
+    //02-Or type
+    let PrintElement = (function(element){
+         document.write(element + " ");
+    });
+    brr.forEach(PrintElement);
+
+    //OR
+    // for(let element of brr){
+    //     document.write(element + " ");  
+    // }
+
+    //Map
+    document.write("Map");
+
+    const numbers = [1, 2, 3, 4, 5];
+    
+    let squares = numbers.map(x => x*x);
+     squares.forEach(function (element){
+         document.write(element + " ")
+     })
+
+    //Filter
+     document.write("Filter");
+     
+
+</script>

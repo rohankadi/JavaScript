@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="demo"></p>
+    <p id="demo1"></p>
+</body>
+<Script>
+    let num = [20, 10, 50, 100, 30, 60, 120, 150, 160, 180]
+     num.splice(2, 3, 1024, 1025, 1026, 1027, 1028 )
+     document.getElementById("demo").innerHTML = num
+     
+     let num1 = [20, 10, 50, 100, 30, 60, 120, 150, 160, 180] 
+    let deleted_values =  num1.splice(2, 3, 1024, 1025, 1026, 1027, 1028 )
+    document.getElementById("demo1").innerHTML = deleted_values
+</Script>
+</html>
